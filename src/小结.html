@@ -1,0 +1,34 @@
+1.useState里如果涉及到计算(localStorage等等)，可使用函数return出来值，此做法避免了重复计算造成不必要的浪费
+2.useEffect清理副作用，通过return 出来一个函数，在此函数执行操作(释放资源，如关闭定时器和延时器)，和componentWillUnmount钩子函数实现的效果差不多
+  useEffect执行的时机一般为下一次执行前和组件销毁前
+3.自定义hooks,可用来封装hooks,类似封装函数，返回一些需要用到的值
+4.使用useEffect发送请求，切记，useEffect的回调函数一定不能加async，为什么呢？因为加了后会返回一个promise，就不是想要用到的值了
+  一般该如何发送请求呢？
+  在里面在写上一个函数，加上async 和 await，里面发送请求，切记要调用
+5.useRef可用来获取dom,const ref = useRef(null) 一般值设为null
+                      挂载到标签上
+                      ref.current获取到这个dom
+6.useContext
+7.reduex
+
+
+react的生命周期
+三个阶段：
+
+挂载阶段：三个钩子 constructor(初始化数据) render(渲染UI) componentDidMount(dom挂载后，一般用于操作dom,发送请求)
+
+更新阶段：二个钩子 render(props发生改变，调用setState。。) componentDidUpdate(数据更新完后，dom也更新过后)
+
+销毁阶段：一个钩子 componentWillUnmount(组件销毁前，一般用于释放资源，如定时器，延时器，挂载到全局上的事件)
+
+
+redux的基本操作：
+三个部分
+store、action、reducer
+store仓库，创建一个仓库，createStore(reducer),将仓库导出，并且使用react-redux进行一个连接，Provider用来存放store数据，useSelector用来获取state数据
+useDispatch用来操作仓库数据的
+
+reducer搬运工，操作的详情都写在reducer中，有两个参数，state和action，state就是仓库的数据，action就是命令，根据action中的type（唯一）进行判断，进行具体操作
+有多个reducer的时候要使用combineReducers（redux的数据）进行一个合并
+
+action命令、指令，有唯一的type，本质是个对象，可以写成函数返回一个对象

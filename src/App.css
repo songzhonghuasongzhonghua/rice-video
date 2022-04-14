@@ -1,0 +1,28 @@
+.app {
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.node {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid red;
+  color: red;
+}
+
+.sub-node {
+  padding: 5px;
+  border: 1px solid green;
+  color: green;
+}
+
+.child {
+  padding: 5px;
+  border: 1px solid skyblue;
+  color: skyblue;
+  font-weight: bold;
+}
+
+li {
+  height: 100px;
+}
