@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-bg: #607ae2;
+  --color-dark: #4d62b5;
+  --color-light: #7392ff;
+  --color-vc-bg: #00000049;
+  --color-pb-bg: #555555;
+  --color-pbm-bg: #607ae2;
+  --color-pbl-bg: #dadada;
+  --color-btn: #607ae2;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg);
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.video-box {
+  width: 40rem;
+  height: auto;
+  background-color: var(--color-dark);
+  box-shadow: 1rem 1rem 2rem var(--color-dark),
+    -1rem -1rem 2rem var(--color-light);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.video {
+  width: 100%;
+}
+
+.video-content {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-pause {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  display: block;
+  color: var(--color-bg);
+  font-size: 3rem;
+  font-weight: 900;
+  transform: translate(-50%, -50%);
+  /* pointer-events: fill; */
+}
+
+.video-controller {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  opacity: 0;
+}
+
+.video-content:hover .video-controller {
+  opacity: 1;
+}
+
+.progress-main {
+  width: 100%;
+  height: 0.6rem;
+  background-color: var(--color-vc-bg);
+  position: absolute;
+  z-index: 1;
+}
+
+.progress-load {
+  width: 0;
+  height: 0.6rem;
+  background-color: var(--color-pbm-bg);
+  position: absolute;
+  z-index: 1;
+}
+.video-btn {
+  flex: 1;
+  background-color: rgba(var(--color-pb-bg), 0.7);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-btn > span {
+  width: fit-content;
+  color: var(--color-btn);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0 1rem;
+}

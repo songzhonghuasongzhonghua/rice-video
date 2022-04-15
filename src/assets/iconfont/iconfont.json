@@ -1,0 +1,72 @@
+{
+  "id": "3332174",
+  "name": "rice-video",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "705711",
+      "name": "暂停",
+      "font_class": "zanting1",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "791875",
+      "name": "退出全屏",
+      "font_class": "tuichuquanping-copy",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "6776386",
+      "name": "声音_实体",
+      "font_class": "shengyin_shiti",
+      "unicode": "eca5",
+      "unicode_decimal": 60581
+    },
+    {
+      "icon_id": "7592575",
+      "name": "24gf-volumeCross",
+      "font_class": "24gf-volumeCross",
+      "unicode": "ea0f",
+      "unicode_decimal": 59919
+    },
+    {
+      "icon_id": "8214588",
+      "name": "暂停",
+      "font_class": "zanting2",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "27253667",
+      "name": "全屏",
+      "font_class": "quanping1",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "2674478",
+      "name": "全屏",
+      "font_class": "quanping",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "2674483",
+      "name": "暂停",
+      "font_class": "zanting",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "7594157",
+      "name": "24gf-playCircle",
+      "font_class": "24gf-playCircle",
+      "unicode": "ea82",
+      "unicode_decimal": 60034
+    }
+  ]
+}
